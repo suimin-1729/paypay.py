@@ -1,0 +1,27 @@
+[project]
+name = "paypaypy"
+version = "1.0.0"
+description = "Python用のPayPay APIライブラリ"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+
+authors = [
+    { name = "睡眠", email = "pyproject87274@dakaka.org" }
+]
+
+dependencies = [
+    "pkce>=1.0.0",
+    "pyscrypt>=1.0.0",
+    "requests>=2.0.0",
+    "tls-client>=1.0.1",
+    "cryptography>=42.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["paypaypy*"]
