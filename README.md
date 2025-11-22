@@ -3,7 +3,7 @@ Python用のPayPay APIライブラリです。
 
 ## インストール
 ```bash
-コマンド
+pip install git+https://github.com/suimin-1729/paypay.py.git
 ```
 
 ## 機能
@@ -19,4 +19,5 @@ Python用のPayPay APIライブラリです。
 
 ## AWS-WAF
 2025年11月07日、PayPayはログイン時に「Aws Waf」というBot検知システムを追加しました。<br>
+
 このライブラリは「Aws Waf」のSolve機能を搭載しており、通常通りログインできます。
