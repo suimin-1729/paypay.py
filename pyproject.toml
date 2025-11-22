@@ -4,13 +4,11 @@ version = "1.0.0"
 description = "Python用のPayPay APIライブラリ"
 readme = "README.md"
 requires-python = ">=3.9"
+license = { text = "MIT" }
 
-# PyPI が読める形式の authors
 authors = [
     { name = "睡眠", email = "pyproject87274@dakaka.org" }
 ]
-
-license = { text = "MIT" }
 
 dependencies = [
     "pkce>=1.0.0",
@@ -24,6 +22,5 @@ dependencies = [
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["paypaypy*"]
+[tool.setuptools]
+packages = ["paypaypy", "paypaypy.solver"]
